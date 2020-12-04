@@ -1,13 +1,13 @@
 
 from flask import Blueprint, render_template, redirect, request, url_for, flash
-from flask_login import login_user
+from flask_login import login_user, logout_user, login_required
 from . import db
 from .models import User
 from .forms import LoginForm, RegisterForm
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/login/', methods=['GET','POST'])
+@auth.route('/login', methods=['GET','POST'])
 def login():
     form = LoginForm()
     if request.method=='POST':
@@ -23,7 +23,7 @@ def login():
             flash('Invalid username or password.')
     return render_template('login.html',errors=form.errors)
 
-@auth.route('/register/',  methods=['GET','POST'])
+@auth.route('/register',  methods=['GET','POST'])
 def register():
     if request.method=='POST':
         form = RegisterForm(request.form)
@@ -42,3 +42,8 @@ def register():
         else:
             print(form.errors)
     return render_template('register.html')
+
+@auth.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('main.index'))
