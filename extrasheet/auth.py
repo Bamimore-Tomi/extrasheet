@@ -10,6 +10,7 @@ auth = Blueprint('auth', __name__)
 @auth.route('/login/', methods=['GET','POST'])
 def login():
     form = LoginForm()
+    errors = {}
     if request.method=='POST':
         form = LoginForm(request.form)
         if form.validate():
@@ -20,8 +21,10 @@ def login():
                 if next is None or not next.startswith('/'):
                     next = url_for('main.home')
                 return redirect(next)
-            flash('Invalid username or password.')
-    return render_template('login.html',errors=form.errors)
+            errors = form.errors.copy()
+            errors['invalid']='Invalid  password'
+        errors['invalid']='Invalid  Email address'
+    return render_template('login.html',errors=errors)
 
 @auth.route('/register/',  methods=['GET','POST'])
 def register():

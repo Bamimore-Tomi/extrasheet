@@ -36,6 +36,10 @@
 <form method="POST">
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
  <div class="row inputrow">
+  {% if errors %}
+<p><span  class="col s12 center-align
+    forg">{{ errors['invalid'] }}</span></p>
+  {% endif %}
         <div class="input-field col s12
         ">
  <i class="material-icons prefix">
