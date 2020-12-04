@@ -1,0 +1,76 @@
+.butto {
+width: 100%;
+padding: 10px 0px 43px 0px;
+background: #244653;
+font-size: 16px;
+font-weight: 900;
+}
+
+.butto2 {
+width: 100%;
+padding: 9px 0px 42px 0px;
+border: 2px solid #244653;
+background: white;
+color: #244653;
+font-size: 16px;
+font-weight: 900;
+}
+
+.forg {
+margin: 5px 0px 11px 0px;
+color: red;
+}
+
+.forgo {
+margin: 5px 0px 22px 0px
+}
+
+
+.logh3 {  
+
+letter-spacing: 1px;
+font-weight: 900;
+color: grey;
+
+}
+
+.logmh3 {
+
+padding: 10px;
+margin-top: 0px;
+
+}
+
+.inputrow {
+padding: 3px 10px;
+background:white;
+
+}
+
+.input-field {
+
+
+}
+
+.input-field input[type=text] {
+
+}
+
+
+
+body {
+background: #f5f5f5;
+}
+
+.starr {
+    
+    height: 1000px;
+}
+
+.selectt {
+    margin-bottom: 18px;
+}
+
+.selecttt {
+    margin-bottom: 18px;
+}

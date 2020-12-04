@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='materialize.min.css') }}">
+  
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+   
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css')}}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='new.css')}}">
+  
+   
+   </head>
+   
+   <body>
+ <div class="navbar-sticky">
+    <nav>
+      <div class="nav-wrapper navbarr">
+        <a href="#!" class="brand-logo">MyExtrasheet</a>
+    
+      </div>
+    </nav>
+  </div>
+       <div class="row">
+           <div class="col m8 starr
+           l6
+           push-m2
+           push-l3 s12">
+               <div class='container center-align logmh3 '>
+           <h5 class="logh3">
+               Create an account
+           </h5>
+       </div>
+    <form method="POST" class="form">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+ <div class="row inputrow">
+        <div class="input-field col s12
+        ">
+ <i class="material-icons prefix">
+     account_circle
+ </i>
+          <input type="text"  name="first_name"  id="firstname" class="validate"/>
+          <label for="firstname">First Name</label>
+        </div>
+<span hidden class="col s12 center-align
+          forg">Error</span>
+  <div class="input-field col s12
+        ">
+ <i class="material-icons prefix">
+     account_box
+ </i>
+          <input type="text"  name="last_name"  id="lastname" class="validate"/>
+          <label for="lastname">Last Name</label>
+        </div>
+<span hidden class="col s12 center-align
+          forg">Error</span>
+  <div class="input-field col s12
+        ">
+ <i class="material-icons prefix">
+     email
+ </i>
+          <input type="text"  name="email"  id="email" class="validate"/>
+          <label for="email">Email Address</label>
+        </div>
+<span hidden class="col s12 center-align
+          forg">Error</span>
+  <div class="input-field col selecttt s12
+        ">
+ <i class="material-icons prefix">
+     phone
+ </i>
+          <input type="text"  name="phone_number"  id="phonenubmer" class="validate"/>
+          <label for="phonenubmer">Phone number </label>
+        </div>
+<span hidden class="col s12 center-align
+          forg">Error</span>
+<div class=" col selectt s12">
+
+    <select name="gender" class="browser-default">
+      <option value="" disabled selected>Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+        </select>
+   
+  </div>
+ <div class=" col s12
+        ">
+ <label for="date">Date of Birth</label>
+          <input type="date" name="date_of_birth"  id="date" class="validate"/>
+         
+        </div>
+<span hidden class="col s12 center-align
+          forg">Error</span>
+        <div class="input-field col s12
+        ">
+ <i class="material-icons prefix">phonelink_erase</i>
+          <input type="password" name="password1"  id="password1" class="validate"/>
+          <label for="password1">Password</label>
+        </div>
+<span hidden class="col s12 center-align
+          forg">Error</span>
+        <div class="input-field col s12
+        ">
+ <i class="material-icons prefix">phonelink_erase</i>
+          <input type="password" name="password2"  id="password2" class="validate"/>
+          <label for="password2">Password Confirmation</label>
+        </div>
+      </div>
+      
+      <div class="row buttonlog">
+          <div class ="col s12">
+  <button class="butto
+          btn">
+              Register
+          </button>
+          </div>
+          
+        
+      </form>
+      <div class ="col s12">
+        <a href="{{url_for('auth.login')}}"class="butto2
+                btn">
+                    Login
+      </a>
+            </div>
+              <div class="row footer">
+           <div class="col s12 l12 m12
+           center-align">
+               <div class="row home
+modal-trigger" href="#modal1"
+               
+               >
+                    <div class="col 
+                   offset-s4 
+                   m1 offset-m4
+                   s1">
+ <i class="material-icons botar prefix">add_to_queue</i>
+                   </div>
+                   <div class="col 
+                    m1 s3">
+                      <h6 class="botext">
+                          Preview
+                      </h6>
+                      
+                   </div>
+               </div>
+               
+      
+
+
+
+ <div id="modal1" class="modal previeww">
+    <div class="modal-content ">
+      <h4 class="preview_h  white-text center-align">Preview</h4>
+      <p class="preview_a">
+Now, you don't have to loose your learning materials again...... Ever !! 
+</p>
+
+<p class="preview_a">
+Moreover, if you're in a new class, session or semester Myextrasheet provides you with the necessary materials you need to succeed.
+</p>
+   
+      <div class="center-align
+      
+      preview_t
+      ">
+Welcome to Myextrasheet.com
+      </div>
+      <p class="preview_b">
+Myextrasheet is an online storage facility that allows you to easily access your learning materials, documents, project works e.t.c and also connects you to relevant people in your Circle(network).
+</p>
+<p class="preview_t center-align">You can use myextrasheet to :
+      </p>
+      
+      <div class="preview_list">
+          <ol>
+              <li>
+Store materials, documents, project works that might be useful to your circle e.g Past questions
+              </li>
+ <li>
+Search for materials you might need.
+
+              </li>
+ <li>
+
+Share materials with your colleagues
+              </li>
+ <li>
+
+Retrieve missed or lost materials, documents, project works e.t.c
+              </li>
+ <li>
+Review concepts that you might have forgotten.
+
+              </li>
+          </ol>
+
+
+
+
+
+<p class="preview_f">
+NOTE: We have a vision to Re-invent the Education System of the World and Save Lives !.... Please join us.
+</p>
+      </div>
+    </div>
+   
+  </div>
+  
+  
+           </div>
+           </div>
+         
+           <script type='text/javascript' src="{{ url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
+           <script src="{{ url_for('static', filename='materialize.min.js') }}"></script>
+  <script type="text/javascript">
+      
+        $(document).ready(function(){
+    $('.modal').modal();
+  });
+  </script>
+
+    </body>

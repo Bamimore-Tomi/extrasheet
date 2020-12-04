@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='materialize.min.css') }}">
+  
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+   
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css')}}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='new.css')}}">
+  
+   
+   </head>
+   
+   <body>
+      <div class="navbar-sticky">
+    <nav>
+      <div class="nav-wrapper navbarr">
+        <a href="#!" class="brand-logo">MyExtrasheet</a>
+    
+      </div>
+    </nav>
+  </div>
+
+
+
+ <div id="modal1" class=" previeww">
+   
+   
+ <div class="container cont ">
+      <p class="preview_a">
+Now, you don't have to loose your learning materials again...... Ever !! 
+</p>
+
+<p class="preview_a">
+Moreover, if you're in a new class, session or semester Myextrasheet provides you with the necessary materials you need to succeed.
+</p>
+   
+      <div class="center-align
+      
+      preview_t
+      ">
+Welcome to Myextrasheet.com
+      </div>
+      <p class="preview_b">
+Myextrasheet is an online storage facility that allows you to easily access your learning materials, documents, project works e.t.c and also connects you to relevant people in your Circle(network).
+</p>
+<p class="preview_t center-align">You can use myextrasheet to :
+      </p>
+      
+      <div class="preview_list">
+          <ol>
+              <li>
+Store materials, documents, project works that might be useful to your circle e.g Past questions
+              </li>
+ <li>
+Search for materials you might need.
+
+              </li>
+ <li>
+
+Share materials with your colleagues
+              </li>
+ <li>
+
+Retrieve missed or lost materials, documents, project works e.t.c
+              </li>
+ <li>
+Review concepts that you might have forgotten.
+
+              </li>
+          </ol>
+
+
+
+
+
+<p class="preview_f">
+NOTE: We have a vision to Re-invent the Education System of the World and Save Lives !.... Please join us.
+</p>
+      </div>
+    </div>
+   
+  </div>
+  
+  
+          
+           
+              <div class="row footer">
+           <div class="col s12 l12 m12
+           center-align">
+           <a href="{{ url_for('auth.login') }}"></a>
+               <div class="row home
+modal-trigger"
+               
+               >
+                    <div class="col 
+                   offset-s3
+                   m1 offset-m3
+                   s1">
+ <i class="material-icons botar prefix">add_to_queue</i>
+                   </div>
+                   <div class="col 
+                    m1 s3">
+                      <h6 class="botext">
+                          <a href="{{ url_for('auth.login') }}">Login/Register</a>
+                      </h6>
+                      
+                   </div>
+               </div>
+               
+      
+
+       
+           
+       
+ 
+      <script type='text/javascript' src="{{ url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='materialize.min.js') }}"></script>
+  <script type="text/javascript">
+      
+        $(document).ready(function(){
+    $('.modal').modal();
+  });
+  </script>
+
+    </body>

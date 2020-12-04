@@ -1,0 +1,199 @@
+.profile {
+padding: 10px 0px;
+border-top-left-radius: 6px ;
+border-top-right-radius: 6px;
+background: #244653;
+
+}
+
+.navbarr {
+background: #244653;
+
+}
+
+.main {
+    height: 1000px;
+}
+.headerp {
+
+
+letter-spacing: 0px;
+
+
+font-weight: 900;
+
+}
+
+.profile2 {
+padding: 15px 10px;
+border-radius: 8px;
+margin: 20px 0px;
+}
+
+
+.meme {
+margin-top: 0.2rem;
+}
+
+
+.rowu {
+margin: 2px 0px 4px -0.8rem;
+}
+
+.rowt {
+margin: -0.3rem 0rem 0rem -0.8rem; 
+}
+.imgs {
+height: 3.80rem;
+min-height: 3.80rem;
+max-height: 3.8rem;
+padding: 0px;
+
+
+}
+
+.imager {
+width: 100%;
+height: 100%;
+border-radius: 100%;
+}
+
+.strr {
+
+}
+
+.butter {
+    
+    margin: 10px 9px 0px -0.5rem;
+    border-radius : 8px;
+    background: white;
+    color: black;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0 ;
+  width: 107%;
+  
+  color: white;
+  text-align: center;
+ padding: 0px 0px;
+ margin-bottom: 0px;
+ 
+ text-align: center;
+}
+
+.home {
+    margin-bottom: 0px;
+    padding: 15px;
+    
+    background: #244653;
+}
+
+.botext {
+    margin-top: 3px;
+
+
+
+}
+
+h6.botextt {
+    font-size: 28px;
+    margin-top: 4px;
+    font-weight: 900;
+}
+
+i.botarr {
+    margin-right: 2px;
+    font-size: 40px;
+    
+}
+
+.big {
+      margin-bottom: 0px;
+    padding: 30px;
+    border-right: 2px solid white;
+    background: #244653;
+
+}
+
+
+
+
+ label {
+    
+    max-width: 110px;
+}
+
+@media only screen and (min-width: 400px) {
+    
+    
+        .home {
+            padding: 38px;
+            width: 110%;
+        
+}
+
+
+
+h6.botext{
+    font-size: 35px;
+    font-weight: 600;
+}
+i.botar {
+    margin-top: 4px;
+  font-size: 35px;
+    font-weight:400;
+    
+}
+}
+
+.preview_t {
+    color: black;
+    font-weight: 900;
+}
+
+.preview_a , .previeww {
+    
+    color: black;
+    text-align: left;
+}
+
+h4.preview_h {
+    margin-top: -24px;
+    padding: 10px;
+margin-left: -24px;
+    width:118%;
+    border-bottom: 1px solid grey;
+    
+background: black;
+    
+}
+
+.preview_f {
+    color: #244653;
+    font-weight: 900;
+    margin-bottom: -15px;
+    margin-top:35px;
+}
+
+ol {
+    padding-left: 12px;
+}
+
+.aft {
+    
+    margin-top: 20px;
+    font-size: 20px;
+}
+.cont {
+    height: 1000px;
+}
+
+.aft2 {
+margin-top: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: -30px;
+}
