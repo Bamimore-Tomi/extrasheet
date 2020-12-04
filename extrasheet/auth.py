@@ -22,8 +22,8 @@ def login():
                     next = url_for('main.home')
                 return redirect(next)
             errors = form.errors.copy()
-            errors['invalid']='Invalid  password'
-        errors['invalid']='Invalid  Email address'
+            errors['invalid']='Invalid login credentials'
+        errors['invalid']='Invalid login credentials '
     return render_template('login.html',errors=errors)
 
 @auth.route('/register/',  methods=['GET','POST'])
