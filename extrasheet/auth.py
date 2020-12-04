@@ -21,7 +21,7 @@ def login():
                     next = url_for('main.home')
                 return redirect(next)
             flash('Invalid username or password.')
-    return render_template('login.html',error=form.errors)
+    return render_template('login.html',errors=form.errors)
 
 @auth.route('/register/',  methods=['GET','POST'])
 def register():
