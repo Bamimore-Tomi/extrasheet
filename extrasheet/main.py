@@ -11,4 +11,4 @@ def index():
 @main.route('/home/')
 @login_required 
 def home():
-    return render_template('aftersign.html')
+    return render_template('AfterSign.html')

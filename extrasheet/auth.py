@@ -41,7 +41,7 @@ def register():
             db.session.commit()
         else:
             print(form.errors)
-    return render_template('register.html')
+    return render_template('Register.html')
 
 @auth.route('/logout')
 def logout():
