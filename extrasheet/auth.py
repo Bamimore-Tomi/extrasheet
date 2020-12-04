@@ -25,6 +25,7 @@ def login():
 
 @auth.route('/register/',  methods=['GET','POST'])
 def register():
+    form = RegisterForm()
     if request.method=='POST':
         form = RegisterForm(request.form)
         if form.validate():
@@ -39,9 +40,11 @@ def register():
             )
             db.session.add(user)
             db.session.commit()
+            login_user(user,True)
+            return redirect(url_for('main.home'))
         else:
             print(form.errors)
-    return render_template('registration.html')
+    return render_template('registration.html', errors=form.errors)
 
 @auth.route('/logout')
 def logout():

@@ -44,8 +44,12 @@
           <input type="text"  name="first_name"  id="firstname" class="validate"/>
           <label for="firstname">First Name</label>
         </div>
-<span hidden class="col s12 center-align
-          forg">Error</span>
+        {% if errors %}
+        {% for i in errors['first_name'] %}
+<p><span  class="col s12 center-align
+          forg">{{ i }}</span></p>
+          {% endfor %}
+        {% endif %}
   <div class="input-field col s12
         ">
  <i class="material-icons prefix">
@@ -54,8 +58,12 @@
           <input type="text"  name="last_name"  id="lastname" class="validate"/>
           <label for="lastname">Last Name</label>
         </div>
-<span hidden class="col s12 center-align
-          forg">Error</span>
+        {% if errors  %}
+        {% for i in errors['last_name'] %}
+<span  class="col s12 center-align
+          forg">{{ i }}</span>
+          {% endfor %}
+        {% endif %}
   <div class="input-field col s12
         ">
  <i class="material-icons prefix">
@@ -64,8 +72,12 @@
           <input type="text"  name="email"  id="email" class="validate"/>
           <label for="email">Email Address</label>
         </div>
-<span hidden class="col s12 center-align
-          forg">Error</span>
+        {% if errors %}
+        {% for i in errors['email'] %}
+<span  class="col s12 center-align
+          forg">{{ i }}</span>
+          {% endfor %}
+        {% endif %}
   <div class="input-field col selecttt s12
         ">
  <i class="material-icons prefix">
@@ -74,8 +86,12 @@
           <input type="text"  name="phone_number"  id="phonenubmer" class="validate"/>
           <label for="phonenubmer">Phone number </label>
         </div>
-<span hidden class="col s12 center-align
-          forg">Error</span>
+        {% if errors %}
+        {% for i in errors['phone_number'] %}
+<span  class="col s12 center-align
+          forg">{{ i }}</span>
+          {% endfor %}
+        {% endif %}
 <div class=" col selectt s12">
 
     <select name="gender" class="browser-default">
@@ -85,22 +101,36 @@
         </select>
    
   </div>
+  {% if errors  %}
+  {% for i in errors['gender'] %}
+<span  class="col s12 center-align
+    forg">{{ i }}</span>
+    {% endfor %}
+  {% endif %}
  <div class=" col s12
         ">
  <label for="date">Date of Birth</label>
           <input type="date" name="date_of_birth"  id="date" class="validate"/>
          
         </div>
-<span hidden class="col s12 center-align
-          forg">Error</span>
+        {% if errors  %}
+        {% for i in errors['date_of_birth'] %}
+<span  class="col s12 center-align
+          forg">{{ i }}</span>
+          {% endfor %}
+        {% endif %}
         <div class="input-field col s12
         ">
  <i class="material-icons prefix">phonelink_erase</i>
           <input type="password" name="password1"  id="password1" class="validate"/>
           <label for="password1">Password</label>
         </div>
-<span hidden class="col s12 center-align
-          forg">Error</span>
+        {% if errors %}
+        {% for i in errors['password1'] %}
+<span  class="col s12 center-align
+          forg">{{ i }}</span>
+          {% endfor %}
+        {% endif %}
         <div class="input-field col s12
         ">
  <i class="material-icons prefix">phonelink_erase</i>

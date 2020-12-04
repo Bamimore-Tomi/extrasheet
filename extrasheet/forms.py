@@ -10,9 +10,9 @@ class LoginForm(FlaskForm):
     
 class RegisterForm(FlaskForm):
     first_name = StringField('FirstName', validators=[DataRequired(), Length(1,100), 
-                                                  Regexp(r'^[a-zA-Z-_.]', 0, 'Firstname must have only letters, dots or underscores')])
+                                                  Regexp(r"^[a-zA-Z ,.'-]+$", 0, 'Firstname must have only letters, dots or underscores')])
     last_name = StringField('LastName', validators=[DataRequired(), Length(1,100), 
-                                                  Regexp(r'^[a-zA-Z-_.]', 0, 'Lastname must have only letters, dots or underscores')])
+                                                  Regexp(r"^[a-zA-Z ,.'-]+$", 0, 'Lastname must have only letters, dots or underscores')])
     email = StringField('Email', validators=[DataRequired(), Length(1, 100),Email()])
     phone_number = StringField('PhoneNumber' ,validators=[DataRequired(),
                                                          Regexp(r'(^[0]\d{10}$)|(^[\+]?[234]\d{12}$)',0, 'Enter a valid Phone Number e.g +2348012345678 or 08012345678')])
