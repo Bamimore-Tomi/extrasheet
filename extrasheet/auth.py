@@ -7,7 +7,7 @@ from .forms import LoginForm, RegisterForm
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/login', methods=['GET','POST'])
+@auth.route('/login/', methods=['GET','POST'])
 def login():
     form = LoginForm()
     if request.method=='POST':
@@ -23,7 +23,7 @@ def login():
             flash('Invalid username or password.')
     return render_template('login.html',errors=form.errors)
 
-@auth.route('/register',  methods=['GET','POST'])
+@auth.route('/register/',  methods=['GET','POST'])
 def register():
     if request.method=='POST':
         form = RegisterForm(request.form)
