@@ -148,16 +148,23 @@ i.botar {
     
 }
 }
-
 .preview_t {
     color: black;
     font-weight: 900;
+    font-size:20px;
+    padding: 10px;
+    margin-top: -10px !important;
 }
 
 .preview_a , .previeww {
     
     color: black;
     text-align: left;
+    
+}
+
+.preview_a {
+    font-size: 15px;
 }
 
 h4.preview_h {
