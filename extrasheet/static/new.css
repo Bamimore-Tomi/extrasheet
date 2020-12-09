@@ -24,6 +24,8 @@ font-weight: 900;
 
 }
 
+
+
 .profile2 {
 padding: 15px 10px;
 border-radius: 8px;
@@ -35,6 +37,9 @@ margin: 20px 0px;
 margin-top: 0.2rem;
 }
 
+.already {
+margin: 25px 0px 10px 0px
+}
 
 .rowu {
 margin: 2px 0px 4px -0.8rem;
@@ -123,7 +128,7 @@ i.botarr {
 
  label {
     
-    max-width: 110px;
+    max-width: 146px;
 }
 
 @media only screen and (min-width: 400px) {
