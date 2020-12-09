@@ -138,7 +138,10 @@
           <label for="password2">Password Confirmation</label>
         </div>
       </div>
-      
+        <span class="col s12 center-align
+          forgo">If you are signing up, it means you have agreed to our <b>Terms & Conditions</b> and <b>Privacy policy.</b>
+          </span>
+
       <div class="row buttonlog">
           <div class ="col s12">
   <button class="butto
@@ -146,15 +149,12 @@
               Register
           </button>
           </div>
-          
-        
+          <span class="col s12 center-align
+          already">Already have an account ? <b>
+<a href="{{url_for('auth.login')}}" >Sign in here</a></b></span>
+      
       </form>
-      <div class ="col s12">
-        <a href="{{url_for('auth.login')}}"class="butto2
-                btn">
-                    Login
-      </a>
-            </div>
+      
               <div class="row footer">
            <div class="col s12 l12 m12
            center-align">
